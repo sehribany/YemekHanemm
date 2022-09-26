@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="users"
+            type="com.user.yemekhanesistemi.Users" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittextarkaplan">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/recycler_arkaplan"
+            android:padding="16dp"
+            android:layout_margin="4dp"
+            >
+
+            <ImageView
+                android:id="@+id/img_food"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo">
+            </ImageView>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:id="@+id/recycler_isim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{users.kullaniciIsim}"
+            android:textSize="18sp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/recycler_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{users.kullaniciEmail}"
+            android:textSize="18sp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Admin Yetkisi :"
+                android:textSize="18sp"
+                android:textColor="@color/black">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/recycler_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@{users.adminmi.toString()}">
+            </TextView>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

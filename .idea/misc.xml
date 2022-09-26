@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable-v24/buttonarkaplan.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable-v24/edittextarkaplan.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable-v24/ic_add.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable-v24/ic_food.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable-v24/logo.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable-v24/takvimarkaplan.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/drawable/recycler_arkaplan.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_admin_giris_sayfasi.xml" value="0.16793313069908813" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_besin_detayi.xml" value="0.24320652173913043" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_main_register_ekrani.xml" value="0.16793313069908813" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_personel_ayar_guncelle.xml" value="0.1752786220871327" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_personel_ayarlari.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_personel_ekle.xml" value="0.16793313069908813" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_personel_giris_sayfasi.xml" value="0.1752786220871327" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_user_detayi.xml" value="0.1752786220871327" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/activity_yemek_kaydetme.xml" value="0.16793313069908813" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/recycler_row2.xml" value="0.25" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/recycler_row3.xml" value="0.1752786220871327" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/layout/recyler_row.xml" value="0.18" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/menu/cikisyap.xml" value="0.18" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/menu/personelsecenekmenu.xml" value="0.22" />
+        <entry key="..\:/Users/user/source/AndroidStudioProjeleri/YemekHaneSistemi/app/src/main/res/menu/secenek_menusu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

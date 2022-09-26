@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="users"
+            type="com.user.yemekhanesistemi.Users" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#EADFE3"
+        android:padding="5dp"
+        tools:context=".BesinDetayi">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EADFE3"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_margin="7dp">
+
+            <EditText
+                android:id="@+id/isim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="İsim ve Soyİsim"
+                android:text="@{users.kullaniciIsim}"
+                android:layout_margin="7dp"
+                android:background="@drawable/edittextarkaplan"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textColorHint="#70000000"></EditText>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:hint="Kullanıcı Adı"
+                android:text="@{users.kullaniciEmail}"
+                android:background="@drawable/edittextarkaplan"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textColorHint="#70000000"></EditText>
+
+            <EditText
+                android:id="@+id/parola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parola"
+                android:text="@{users.kullaniciPassword}"
+                android:background="@drawable/edittextarkaplan"
+                android:layout_margin="7dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textColorHint="#70000000"></EditText>
+
+            <Button
+                android:id="@+id/kullanicisil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonarkaplan"
+                android:onClick="sil"
+                android:text="Kullanıcıyı Sil"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="476dp">
+            </Button>
+            <Button
+                android:id="@+id/güncelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonarkaplan"
+                android:onClick="güncelle"
+                android:text="Kullanıcı Bilgilerini Güncelle"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                tools:layout_editor_absoluteX="55dp"
+                tools:layout_editor_absoluteY="476dp">
+            </Button>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/gisim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{users.kullaniciIsim}"
+                    android:visibility="invisible"
+                    >
+
+                </TextView>
+                <TextView
+                    android:id="@+id/gmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{users.kullaniciEmail}"
+                    android:visibility="invisible"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/gparola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{users.kullaniciPassword}"
+                    android:visibility="invisible">
+                </TextView>
+                <TextView
+                    android:id="@+id/gadmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{users.adminmi.toString()}"
+                    android:visibility="invisible"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/gpersonel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{users.personelmi.toString()}"
+                    android:visibility="invisible"
+                    >
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    
+    
+</layout>

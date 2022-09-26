@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="besin1"
+            type="com.user.yemekhanesistemi.Foods" />
+    </data>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/recycler_arkaplan"
+        android:padding="16dp"
+        android:layout_margin="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_food"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_food">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_tarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{besin1.tarih}"
+                android:textSize="14sp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:id="@+id/text_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{besin1.anayemek}"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                >
+                <TextView
+                    android:id="@+id/text_onay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kişi Sayısı:"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="3dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/text_onaysayisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{besin1.kisiSayisi}"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_margin="3dp">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

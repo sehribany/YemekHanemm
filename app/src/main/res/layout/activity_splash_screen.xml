@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F43636"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/kitchen" />
+
+    <TextView
+        android:id="@+id/textsplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagelogo"
+        android:text="Yemek Sistemi"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/acmeregular"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textsplash"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:indeterminateTint="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/textsplash2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.yemeksistemi.com"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/black"
+        />
+
+
+
+</RelativeLayout>

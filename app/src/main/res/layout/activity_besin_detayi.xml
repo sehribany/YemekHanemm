@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="yemek"
+            type="com.user.yemekhanesistemi.Foods" />
+    </data>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EADFE3"
+        android:padding="5dp"
+    tools:context=".BesinDetayi">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EADFE3"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="7dp">
+
+        <TextView
+            android:id="@+id/txt_ptarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tarih"
+            android:text="@{yemek.tarih}"
+            android:layout_margin="7dp"
+            android:background="@drawable/edittextarkaplan"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#70000000"></TextView>
+
+        <TextView
+            android:id="@+id/txt_panayemek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:hint="Ana Yemek"
+            android:text="@{yemek.anayemek}"
+            android:background="@drawable/edittextarkaplan"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#70000000"></TextView>
+
+        <TextView
+            android:id="@+id/txt_picecek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İçecek"
+            android:text="@{yemek.icecek}"
+            android:background="@drawable/edittextarkaplan"
+            android:layout_margin="7dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#70000000"></TextView>
+
+        <TextView
+            android:id="@+id/txt_ptatli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tatlı"
+            android:text="@{yemek.tatli}"
+            android:background="@drawable/edittextarkaplan"
+            android:textSize="20sp"
+            android:layout_margin="7dp"
+            android:textColor="@color/black"
+            android:textColorHint="#70000000"></TextView>
+
+        <TextView
+            android:id="@+id/txt_pmeyve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Meyve"
+            android:textColor="@color/black"
+            android:background="@drawable/edittextarkaplan"
+            android:layout_margin="7dp"
+            android:textSize="20sp"
+            android:text="@{yemek.meyve}"
+            android:textColorHint="#70000000"></TextView>
+
+        <TextView
+            android:id="@+id/txt_pfiyat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fiyat"
+            android:text="@{yemek.fiyat}"
+            android:background="@drawable/edittextarkaplan"
+            android:layout_margin="7dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#70000000"></TextView>
+
+        <TextView
+            android:id="@+id/txt_pkisiSayisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kişi Sayısı"
+            android:text="@{yemek.kisiSayisi}"
+            android:background="@drawable/edittextarkaplan"
+            android:layout_margin="7dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="#70000000"></TextView>
+
+        <Button
+            android:id="@+id/buttonplisteyedon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonarkaplan"
+            android:onClick="listeyeDon"
+            android:text="Yemekleri Aç"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="476dp">
+        </Button>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/onayverme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="176dp"
+                android:text="Yemek İstiyorum."
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </CheckBox>
+
+            <Button
+                android:id="@+id/yemekistegikaydet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kaydet"
+                android:onClick="yemekIstek"
+                android:background="@drawable/buttonarkaplan"
+                android:layout_gravity="right">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</layout>
